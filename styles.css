@@ -3,24 +3,24 @@
 ═══════════════════════════════════════════ */
 :root {
     --white:    #FFFFFF;
-    --off:      #f4f5f7;
-    --gray-50:  #f4f5f7;
-    --gray-100: #eceef1;
-    --gray-200: #e2e5ea;
-    --gray-300: #cdd2d9;
-    --gray-400: #9aa0a8;
-    --gray-500: #6b7178;
-    --gray-600: #454951;
-    --gray-800: #1c1e22;
-    --black:    #0c0d10;
-    --dark:     #0c0d10;
-    --dark-2:   #15171b;
+    --off:      #f7f5f0;
+    --gray-50:  #f7f5f0;
+    --gray-100: #efeae0;
+    --gray-200: #e3ddd0;
+    --gray-300: #d6c9ac;
+    --gray-400: #96907f;
+    --gray-500: #6f6a5c;
+    --gray-600: #4a4438;
+    --gray-800: #201c16;
+    --black:    #100e0b;
+    --dark:     #14120e;
+    --dark-2:   #1d1a15;
 
-    --red:        #DC1E1E;
-    --red-h:      #B31616;
-    --red-muted:  rgba(220,30,30,.08);
-    --red-border: rgba(220,30,30,.2);
-    --steel:      #c9ccd1;
+    --red:        #af8a3f;
+    --red-h:      #8a6c30;
+    --red-muted:  rgba(175,138,63,.10);
+    --red-border: rgba(175,138,63,.28);
+    --steel:      #ada58e;
 
     --wa: #25D366;
     --wa-h: #1DAA55;
@@ -69,7 +69,7 @@ textarea, input, select { font-family:var(--font); }
 #loader {
     position: fixed;
     inset: 0;
-    background: #0c0d10;
+    background: #14120e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +80,7 @@ textarea, input, select { font-family:var(--font); }
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(220,30,30,.06) 0%, transparent 70%);
+    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(175,138,63,.06) 0%, transparent 70%);
     pointer-events: none;
 }
 #loader.out { opacity:0; visibility:hidden; pointer-events:none; }
@@ -104,7 +104,7 @@ textarea, input, select { font-family:var(--font); }
     width: 130px;
     opacity: 0;
     animation: loaderBrandIn 0.8s cubic-bezier(0.16,1,0.3,1) 0.1s both;
-    filter: drop-shadow(0 0 14px rgba(220,30,30,.3));
+    filter: drop-shadow(0 0 14px rgba(175,138,63,.3));
 }
 
 @keyframes loaderBrandIn {
@@ -132,8 +132,8 @@ textarea, input, select { font-family:var(--font); }
     position: absolute;
     inset: 14px;
     border-radius: 50%;
-    border: 1.5px solid rgba(220,30,30,.1);
-    border-bottom-color: rgba(220,30,30,.7);
+    border: 1.5px solid rgba(175,138,63,.1);
+    border-bottom-color: rgba(175,138,63,.7);
     animation: spin 0.62s linear infinite reverse;
 }
 
@@ -155,7 +155,7 @@ textarea, input, select { font-family:var(--font); }
 .loader-bar-fill {
     height: 100%;
     width: 0;
-    background: linear-gradient(90deg, rgba(220,30,30,.5) 0%, var(--red) 100%);
+    background: linear-gradient(90deg, rgba(175,138,63,.5) 0%, var(--red) 100%);
     border-radius: 2px;
     animation: loadProg 1.8s cubic-bezier(0.4,0,0.2,1) 0.3s forwards;
     position: relative;
@@ -168,7 +168,7 @@ textarea, input, select { font-family:var(--font); }
     width: 5px; height: 5px;
     border-radius: 50%;
     background: var(--red);
-    box-shadow: 0 0 8px var(--red), 0 0 18px rgba(220,30,30,.7);
+    box-shadow: 0 0 8px var(--red), 0 0 18px rgba(175,138,63,.7);
 }
 .loader-pct {
     position: absolute;
@@ -296,7 +296,7 @@ textarea, input, select { font-family:var(--font); }
 .btn-nav-primary:hover {
     background: var(--red-h);
     transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(220,30,30,.3);
+    box-shadow: 0 6px 18px rgba(175,138,63,.3);
 }
 
 .nav-burger {
@@ -326,7 +326,7 @@ textarea, input, select { font-family:var(--font); }
     left: 100%;
     width: 100%;
     z-index: 201;
-    background: #080808;
+    background: #0c0a08;
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -357,7 +357,7 @@ textarea, input, select { font-family:var(--font); }
 }
 .nm-logo {
     width: 64px;
-    filter: drop-shadow(0 0 10px rgba(220,30,30,.25));
+    filter: drop-shadow(0 0 10px rgba(175,138,63,.25));
     display: block;
 }
 #nav-close {
@@ -373,7 +373,7 @@ textarea, input, select { font-family:var(--font); }
     flex-shrink: 0;
     position: static;
 }
-#nav-close:hover { background: rgba(220,30,30,.18); color: var(--red); }
+#nav-close:hover { background: rgba(175,138,63,.18); color: var(--red); }
 
 /* Nav links */
 .nm-nav {
@@ -476,7 +476,7 @@ textarea, input, select { font-family:var(--font); }
     left: 0;
     right: 0;
     bottom: -70vh;
-    background: url('img/hero-vigilancia.jpeg') center 22% / cover no-repeat;
+    background: url('img/hero-formacion-tactica.png') center 30% / cover no-repeat;
     will-change: transform;
     z-index: 0;
 }
@@ -602,7 +602,7 @@ textarea, input, select { font-family:var(--font); }
 .btn-primary:hover {
     background: var(--red-h);
     transform: translateY(-2px);
-    box-shadow: 0 10px 28px rgba(220,30,30,.35);
+    box-shadow: 0 10px 28px rgba(175,138,63,.35);
 }
 
 .btn-secondary {
@@ -953,7 +953,7 @@ textarea, input, select { font-family:var(--font); }
     background: var(--red);
     border-color: var(--red);
     color: var(--white);
-    box-shadow: 0 0 0 8px rgba(220,30,30,.1);
+    box-shadow: 0 0 0 8px rgba(175,138,63,.1);
 }
 .process-step h3 { font-size:.975rem; font-weight:700; margin-bottom:8px; }
 .process-step p { font-size:.825rem; color:var(--gray-400); line-height:1.65; }
@@ -1146,7 +1146,7 @@ textarea, input, select { font-family:var(--font); }
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: var(--red);
-    box-shadow: 0 0 0 3px rgba(220,30,30,.08);
+    box-shadow: 0 0 0 3px rgba(175,138,63,.08);
 }
 .form-group textarea { resize:vertical; min-height:90px; }
 
@@ -1162,7 +1162,7 @@ textarea, input, select { font-family:var(--font); }
     display: flex; align-items:center; justify-content:center; gap:8px;
     transition: var(--t);
 }
-.btn-form-submit:hover { background:var(--red-h); transform:translateY(-1px); box-shadow:0 6px 20px rgba(220,30,30,.3); }
+.btn-form-submit:hover { background:var(--red-h); transform:translateY(-1px); box-shadow:0 6px 20px rgba(175,138,63,.3); }
 
 /* ═══════════════════════════════════════════
    FOOTER
@@ -1180,7 +1180,7 @@ textarea, input, select { font-family:var(--font); }
     width: 84px;
     object-fit: contain;
     margin-bottom: 16px;
-    filter: drop-shadow(0 0 10px rgba(220,30,30,.25));
+    filter: drop-shadow(0 0 10px rgba(175,138,63,.25));
     display: block;
 }
 .footer-brand p { font-size:.85rem; color:rgba(255,255,255,.45); line-height:1.7; max-width:280px; }
@@ -1302,7 +1302,7 @@ textarea, input, select { font-family:var(--font); }
     width: 900px;
     height: 900px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(220,30,30,.09) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(175,138,63,.09) 0%, transparent 60%);
     top: -320px;
     left: 50%;
     transform: translateX(-50%);
